@@ -22,3 +22,6 @@ DACON 국토교통 빅데이터 온라인 해커톤 경진대회 데이터 관�
 
 - [Home Page Link](https://www.kotsa.or.kr/dps/)
 - 데이터를 다운받기 위해서는 보안서약서를 제출해야 한다.
+
+- [보안서약서(HWP)](https://github.com/pacientes/DACON_MOLIT_BIGDATA/blob/master/Doc/%5B%EB%B6%99%EC%9E%84%5D%EB%B3%B4%EC%95%88%EC%84%9C%EC%95%BD%EC%84%9C(%EC%8B%A0%EC%B2%AD%EC%8B%9C%20%EC%B2%A8%EB%B6%80).hwp)
+- [보안서약서(PDF)](https://github.com/pacientes/DACON_MOLIT_BIGDATA/blob/master/Doc/%5B%EB%B6%99%EC%9E%84%5D%EB%B3%B4%EC%95%88%EC%84%9C%EC%95%BD%EC%84%9C(%EC%8B%A0%EC%B2%AD%EC%8B%9C%20%EC%B2%A8%EB%B6%80).pdf)
