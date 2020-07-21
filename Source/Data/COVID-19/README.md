@@ -23,6 +23,31 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 
 ## PatientInfo
 
+|Column Name|Description|Data Type|Sample|
+|----------|----------|-----|-----|
+|patient_id|환자 ID|INT|1000000001|
+|global_num|KCDC에서 제공 한 숫자|INT|None|
+|sex|환자의 성별|STRING|male|
+|birth_year|환자의 출생 년도|INT|None|
+|age|환자의 나이|STRING|50s|
+|country|환자의 국가|STRING|Korea|
+|province|환자의 지방|STRING|서울|
+|city|환자의 도시|STRING|강서구(새로 생긴듯)|
+|disease|질병|BOOL|None|
+|infection_case|감염경로|STRING|overseas inflow|
+|infection_order|감염 순서|INT|None|
+|infected_by|환자를 감염시킨 사람의 ID|INT|2002000001|
+|contact_number|사람들과의 접촉 수|INT|75|
+|symptom_onset_date|증상이 시작된 날짜|DATE|2020-01-22|
+|confirmed_date|확진 날짜|DATA|2020-01-23|
+|released_date|퇴원 날짜|DATE|2020-02-05|
+|deceased_date|사망한 날짜|DATE|2020-03-02|
+|state|격리상태(격리, 퇴원 사망)|STRING|released|
+
+### To-Do
+
+- 데이터 정의서와 실제 데이터가 맞지 않음. 확인 필요
+
 ---
 
 ## Time
