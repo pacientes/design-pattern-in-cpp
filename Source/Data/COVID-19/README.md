@@ -1,5 +1,7 @@
 # COVID-19 데이터 설명서
 
+COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
+
 ## Case
 
 ## PatientInfo
