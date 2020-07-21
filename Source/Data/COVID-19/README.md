@@ -4,15 +4,42 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 
 ## Case
 
+|Column Name|Description|Data Type|Sample|
+|----------|----------|-----|-----|
+|case_id|감염 사례의 ID|INT|1000001|
+|province|지방|STRING|서울|
+|city|도시|STRING|용산구|
+|group|집단감염 여부|BOOL|TRUE|
+|infection_case|감염 사례|STRING|Itaewon Clubs|
+|confirmed|누적 확진자 수|INT|139|
+|latitude|지역 위도(WGS84)|FLOAT|37.538621|
+|longitude|지역 경도(WGS84)|FLOAT|126.992652|
+
+### To-Do
+
+-
+
+---
+
 ## PatientInfo
+
+---
 
 ## Time
 
+---
+
 ## TimeAge
+
+---
 
 ## TimeGender
 
+---
+
 ## TimeProvince
+
+---
 
 ## Region
 
@@ -35,6 +62,8 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 
 - 각 지역별 기반 정보(초등학교, 유치원, 대학 수 등)별 코로나 확진자 발생 정도를 표시하면 좋을듯?
 
+---
+
 ## Policy
 
 |Column Name|Description|Data Type|Sample|
@@ -50,3 +79,5 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 ### To-Do
 
 - 정책 시행 여부에 따라 국가별 확진자 발생 추이를 살펴보면 좋을듯?
+
+---
