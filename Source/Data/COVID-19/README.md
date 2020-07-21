@@ -4,6 +4,8 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 
 ## Case
 
+- COVID-19 발생 경우
+
 |Column Name|Description|Data Type|Sample|
 |----------|----------|-----|-----|
 |case_id|감염 사례의 ID|INT|1000001|
@@ -23,19 +25,21 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 
 ## PatientInfo
 
+- 환자 정보
+
 |Column Name|Description|Data Type|Sample|
 |----------|----------|-----|-----|
 |patient_id|환자 ID|INT|1000000001|
-|global_num|KCDC에서 제공 한 숫자|INT|None|
+|global_num|KCDC에서 제공 한 숫자|INT|**None**|
 |sex|환자의 성별|STRING|male|
-|birth_year|환자의 출생 년도|INT|None|
+|birth_year|환자의 출생 년도|INT|**None**|
 |age|환자의 나이|STRING|50s|
 |country|환자의 국가|STRING|Korea|
 |province|환자의 지방|STRING|서울|
 |city|환자의 도시|STRING|강서구(새로 생긴듯)|
-|disease|질병|BOOL|None|
+|disease|질병|BOOL|**None**|
 |infection_case|감염경로|STRING|overseas inflow|
-|infection_order|감염 순서|INT|None|
+|infection_order|감염 순서|INT|**None**|
 |infected_by|환자를 감염시킨 사람의 ID|INT|2002000001|
 |contact_number|사람들과의 접촉 수|INT|75|
 |symptom_onset_date|증상이 시작된 날짜|DATE|2020-01-22|
@@ -52,21 +56,74 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 
 ## Time
 
+- 날짜별 확진자, 사망자 데이터
+
+|Column Name|Description|Data Type|Sample|
+|----------|----------|-----|-----|
+|date|날짜|DATE|2020-01-20|
+|time|시간|INT|16|
+|test|누적 테스트 수|INT|1|
+|negative|누적 음성 수|INT|0|
+|confirmed|누적 확진자 수|INT|1|
+|released|누적 퇴원 수|INT|0|
+|deceased|누적 사망자 수|INT|0|
+
+### To-Do
+
+- 시간대별 검사, 음석 확진자 수를 그래프로 그려보기
+
 ---
 
 ## TimeAge
+
+- 날짜 해당 연령대(10대 20대 30대 등)별 확진자, 사망자 데이터
+
+|Column Name|Description|Data Type|Sample|
+|----------|----------|-----|-----|
+|date|날짜|DATE|2020-03-02|
+|time|시간|INT|0|
+|age|환자의 나이|STRING|0s|
+|confirmed|누적 확진자 수|INT|32|
+|deceased|누적 사망자 수|INT|0|
+
+### To-Do
 
 ---
 
 ## TimeGender
 
+- 날짜 해당 성별(male, female) 확진자, 사망자 데이터
+
+|Column Name|Description|Data Type|Sample|
+|----------|----------|-----|-----|
+|date|날짜|DATE|2020-03-02|
+|time|시간|INT|0|
+|sex|성별|STRING|male|
+|confirmed|누적 확진자 수|INT|1591|
+|deceased|누적 사망자 수|INT||13|
+
+### To-Do
+
 ---
 
 ## TimeProvince
 
+- 날짜별 한국 광역도시별 확진자, 사망자 데이터
+
+|Column Name|Description|Data Type|Sample|
+|----------|----------|-----|-----|
+|date|날짜|DATE|2020-01-20|
+|time|시간|INT|16|
+|province|지방|STRING|서울|
+|confirmed|누적 확진자 수|INT|0|
+|released|누적 퇴원 수|INT|0|
+|deceased|누적 사망 수|INT|0|
+
 ---
 
 ## Region
+
+- 각 지역에 대한 기초 데이터
 
 |Column Name|Description|Data Type|Sample|
 |----------|----------|-----|-----|
@@ -90,6 +147,8 @@ COVID-19 데이터 관련 내용 정리 및 검토 필요 리스트 작성
 ---
 
 ## Policy
+
+- 국가별 정책 시행 기간 및 정책에 데이터
 
 |Column Name|Description|Data Type|Sample|
 |----------|----------|-----|-----|
