@@ -23,7 +23,7 @@ class Korean final :
 public:
 	void text() override
 	{
-		std::cout << "Hello Korean Class" << std::endl;
+		std::cout << "Hello, Korean Class" << std::endl;
 	}
 };
 
@@ -33,12 +33,12 @@ class English final :
 public:
 	void text() override
 	{
-		std::cout << "Hello English Class" << std::endl;
+		std::cout << "Hello, English Class" << std::endl;
 	}
 };
 
 // 팩토리 패턴
-class Factory
+class Factory final
 {
 public:
 	static std::shared_ptr<ILanguage> getInstance(const LanguageType& type)
@@ -58,7 +58,7 @@ public:
 	}
 };
 
-class Hello
+class Hello final
 {
 public:
 	void greeting(const LanguageType& type)
