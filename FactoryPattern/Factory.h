@@ -69,7 +69,7 @@ public:
 	}
 };
 
-// 심플 팩토리(Simple Factory)
+// 심플 팩토리 패턴
 // 객체의 생성을 클래스 내부적으로 해결한다.
 class SimpleHello final
 {
