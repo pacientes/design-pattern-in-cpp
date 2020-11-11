@@ -68,3 +68,21 @@ public:
 		language->text();
 	}
 };
+
+// 심플 팩토리(Simple Factory)
+// 객체의 생성을 클래스 내부적으로 해결한다.
+class SimpleHello final
+{
+public:
+	void greeting()
+	{
+		std::shared_ptr<ILanguage> language = factory();
+		language->text();
+	}
+
+	static std::shared_ptr<ILanguage> factory()
+	{
+		return std::make_shared<Korean>();
+	}
+};
+
