@@ -31,7 +31,7 @@ public:
 	}
 };
 
-// 추상화 팩토리
+// 팩토리 메서드 패턴의 핵심
 class IFactory
 {
 public:
@@ -43,6 +43,9 @@ public:
 	}
 
 protected:
+	// 기존의 팩토리 패턴에는 객체의 생성에 필요한 타입을 지정받았다.
+	// 팩토리 메서드 패턴은 객체의 인터페이스를 생성하고, 추상화하기 때문에
+	// 객체 생성에 필요한 타입을 몰라도 된다.
 	virtual std::shared_ptr<IProduct> createProduct() = 0;
 };
 
@@ -75,5 +78,22 @@ protected:
 	std::shared_ptr<IProduct> createProduct() override
 	{
 		return std::make_shared<AppleProduct>();
+	}
+};
+
+template<typename Production>
+class StandardFactory final :
+	public IFactory
+{
+public:
+	StandardFactory()
+	{
+		std::cout << "[Apple] is constructed" << std::endl;
+	}
+
+protected:
+	std::shared_ptr<IProduct> createProduct() override
+	{
+		return std::make_shared<Production>();
 	}
 };
