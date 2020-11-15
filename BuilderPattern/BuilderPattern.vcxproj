@@ -142,6 +142,8 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="Builder.h" />
     <ClInclude Include="Computer.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="Storage.h" />

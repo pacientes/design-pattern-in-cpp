@@ -29,5 +29,11 @@
     <ClInclude Include="Storage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
