@@ -1,4 +1,5 @@
-#include "FactoryMethod.h"
+#include "AppleFactory.h"
+#include "LGFactory.h"
 
 int main(const int argc, const char* argv[])
 {
