@@ -1,4 +1,4 @@
-#include "Factory.h"
+#include "HellLanguage.h"
 
 int main(const int argc, const char* argv[])
 {
@@ -19,6 +19,7 @@ int main(const int argc, const char* argv[])
 
 	// 단점
 	// 1. 생성을 전담할 클래스가 생기므로, 관리해야하는 클래스가 늘어난다.
+	// 2. 팩토리가 실제 생성할 객체들의 타입을 알아야 한다.
 
 	return 0;
 }
