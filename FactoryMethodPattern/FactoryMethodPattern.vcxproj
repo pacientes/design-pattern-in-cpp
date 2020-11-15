@@ -139,7 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="FactoryMethod.h" />
+    <ClInclude Include="AppleFactory.h" />
+    <ClInclude Include="AppleProduct.h" />
+    <ClInclude Include="IFactory.h" />
+    <ClInclude Include="IProduct.h" />
+    <ClInclude Include="LGFactory.h" />
+    <ClInclude Include="LGProduct.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
