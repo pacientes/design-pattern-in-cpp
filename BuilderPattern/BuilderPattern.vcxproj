@@ -143,9 +143,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
-    <ClInclude Include="Builder.h" />
+    <ClInclude Include="IBuilder.h" />
     <ClInclude Include="Computer.h" />
+    <ClInclude Include="Builder.h" />
     <ClInclude Include="Memory.h" />
+    <ClInclude Include="AlgorithmVector.h" />
     <ClInclude Include="Storage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

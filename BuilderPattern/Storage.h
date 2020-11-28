@@ -3,11 +3,6 @@
 class Storage
 {
 public:
-	Storage()
-	{
-		m_size = 0;
-	}
-
 	Storage(const int& size)
 	{
 		m_size = size;
@@ -18,7 +13,7 @@ public:
 		m_size = size;
 	}
 
-	int getSize()
+	const int getSize()
 	{
 		return m_size;
 	}

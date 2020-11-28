@@ -14,20 +14,32 @@ public:
 	{
 		m_ram.clear();
 		m_storage.clear();
-		std::cout << "Computer object is constructed" << std::endl;
 	}
 
-	std::string toString()
+	void setMemory(const Memory& memory)
 	{
-		std::string infoComputer = "This computer's spec is...\nCPU: " +
-			m_cpu + ",\nRAM: " +
-			std::to_string(this->memory()) + "{}GB,\nStorage : " +
-			std::to_string(this->storage()) + "{}GB.\n";
-
-		return infoComputer;
+		Memory tmpMemory = memory;
+		m_ram.push_back(tmpMemory);
 	}
 
-	int memory()
+	void setStorage(const Storage& storage)
+	{
+		Storage tmpStorage = storage;
+		m_storage.push_back(tmpStorage);
+	}
+
+	void setCpu(const std::string& cpu)
+	{
+		m_cpu = cpu;
+	}
+
+	void showInfo()
+	{
+		std::cout << toString() << std::endl;
+	}
+
+private:
+	int getMemory()
 	{
 		int size = 0;
 		for (size_t i = 0; i < m_ram.size(); i++)
@@ -38,7 +50,7 @@ public:
 		return size;
 	}
 
-	int storage()
+	int getStorage()
 	{
 		int size = 0;
 		for (size_t i = 0; i < m_storage.size(); i++)
@@ -49,7 +61,18 @@ public:
 		return size;
 	}
 
-private:
+	std::string toString()
+	{
+		std::string infoComputer = "[Computer] This computer's spec is...\nCPU: " +
+			m_cpu + ",\nRAM: " +
+			std::to_string(getMemory()) + "GB,\nStorage: " +
+			std::to_string(getStorage()) + "GB.\n";
+
+		return infoComputer;
+	}
+
+	std::string m_info;
+
 	std::string m_cpu;
 	std::vector<Memory> m_ram;
 	std::vector<Storage> m_storage;

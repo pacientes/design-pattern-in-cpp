@@ -1,22 +1,20 @@
 #pragma once
 
-#include "Builder.h"
-
 #include "Computer.h"
-#include "Memory.h"
-#include "Storage.h"
 
 class Algorithm
 {
 public:
+	virtual void showAlgorithm() = 0;
 	virtual void setCpu(const std::string& cpu) = 0;
-	virtual void setRam(const Memory& ram) = 0;
-	virtual void setStorage(const Storage& storage) = 0;
+	virtual void setRam(const std::vector<Memory>& ram) = 0;
+	virtual void setStorage(const std::vector<Storage>& storage) = 0;
 
-	Algorithm* getInstance()
+	Computer getInstance()
 	{
-		return this;
+		return m_computer;
 	}
+
 protected:
-	IBuilder m_builder;
+	Computer m_computer;
 };
