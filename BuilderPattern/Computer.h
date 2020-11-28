@@ -53,5 +53,4 @@ private:
 	std::string m_cpu;
 	std::vector<Memory> m_ram;
 	std::vector<Storage> m_storage;
-
 };

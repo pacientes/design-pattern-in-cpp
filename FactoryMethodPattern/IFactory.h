@@ -11,7 +11,7 @@ class IFactory
 public:
 	// create() 인터페이스를 통해서만 객체 생성이 가능하다.
 	// IProduct를 상속하는 어떤 객체든 생성이 가능하다.
-	std::shared_ptr<IProduct> create()
+	virtual std::shared_ptr<IProduct> create() final
 	{
 		return this->createProduct();
 	}

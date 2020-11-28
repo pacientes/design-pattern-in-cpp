@@ -5,20 +5,20 @@ int main(const int argc, const char* argv[])
 {
 	// Korea Factory
 	std::shared_ptr<IFactory> factory = std::make_shared<KoreaFactory>();
-	auto kDoor = factory->createDoor();
+	std::shared_ptr<IDoorProduct> kDoor = factory->createDoor();
 	kDoor->makeAssemble();
 
-	auto kTire = factory->createTire();
+	std::shared_ptr<ITireProduct> kTire = factory->createTire();
 	kTire->makeAssemble();
 
 	std::cout << "\n\n" << std::endl;
 
 	// USA Factory
 	factory.reset(new StateFactory);
-	auto uDoor = factory->createDoor();
+	std::shared_ptr<IDoorProduct> uDoor = factory->createDoor();
 	uDoor->makeAssemble();
 
-	auto uTire = factory->createTire();
+	std::shared_ptr<ITireProduct> uTire = factory->createTire();
 	uTire->makeAssemble();
 
 	// 추상 클래스는 그룹을 나눠서 복수의 객체를 생성하는데 편리하다. (Door, Tire)
