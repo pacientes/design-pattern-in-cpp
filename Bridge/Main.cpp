@@ -7,8 +7,8 @@
 
 int main(const int argc, const char* argv[])
 {
-	std::shared_ptr<Korean> korean = std::make_shared<Korean>();
-	std::shared_ptr<English> english = std::make_shared<English>();
+	std::shared_ptr<Hello> korean = std::make_shared<Korean>();
+	std::shared_ptr<Hello> english = std::make_shared<English>();
 
 	std::shared_ptr<Message> message = std::make_shared<Message>(korean);
 	std::cout << "Result: " << message->execute() << std::endl;
