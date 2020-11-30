@@ -1,6 +1,6 @@
 # Deisng Pattern using C++ Language
 
-## Topics
+## Contents
 
 ### **생성 패턴(Creational Patterns)**
 1. 팩토리 패턴(Factory)
