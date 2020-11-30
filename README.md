@@ -1,4 +1,6 @@
-# DesignPatternInCpp
+# Deisng Pattern using C++ Language
+
+## Topics
 
 - **생성 패턴(Creational Patterns)**
   - 팩토리 패턴(Factory)
@@ -27,3 +29,8 @@
   - 팀플릿 메소드 패턴(Template Method)
   - **전략 패턴(Strategy)**
   - 인터프리터 패턴(Interpreter)
+
+## Rules
+
+1. Mordern C++ language.
+2. Include related example.
