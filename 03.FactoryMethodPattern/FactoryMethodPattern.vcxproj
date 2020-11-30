@@ -18,27 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="IDoorProduct.h" />
-    <ClInclude Include="IFactory.h" />
-    <ClInclude Include="ITireProduct.h" />
-    <ClInclude Include="KoreaDoor.h" />
-    <ClInclude Include="KoreaFactory.h" />
-    <ClInclude Include="KoreaTire.h" />
-    <ClInclude Include="StateDoor.h" />
-    <ClInclude Include="StateFactory.h" />
-    <ClInclude Include="StateTire.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6a152a12-e04d-491c-a9e5-6b88da480648}</ProjectGuid>
-    <RootNamespace>AbstractFactory</RootNamespace>
+    <ProjectGuid>{dffb48e6-274e-47ed-b858-0a9a6ee0b199}</ProjectGuid>
+    <RootNamespace>FactoryMethodPattern</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>4.AbstractFactory</ProjectName>
+    <ProjectName>03.FactoryMethodPattern</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -153,6 +139,17 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AppleFactory.h" />
+    <ClInclude Include="AppleProduct.h" />
+    <ClInclude Include="IFactory.h" />
+    <ClInclude Include="IProduct.h" />
+    <ClInclude Include="LGFactory.h" />
+    <ClInclude Include="LGProduct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

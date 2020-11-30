@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a1b9d552-f97b-4f98-bd89-5b3ea989cf68}</ProjectGuid>
-    <RootNamespace>SingletonPattern</RootNamespace>
+    <ProjectGuid>{b177821a-12ab-4789-a3fc-c8b1c389a051}</ProjectGuid>
+    <RootNamespace>Prototype</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>2.SingletonPattern</ProjectName>
+    <ProjectName>06.Prototype</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,10 +140,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
+    <ClInclude Include="Hello.h" />
+    <ClInclude Include="Prototype.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Singleton.h" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
