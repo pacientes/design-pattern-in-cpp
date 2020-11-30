@@ -24,6 +24,7 @@
     <ProjectGuid>{862b158c-882d-45e8-a6df-231326b02c2f}</ProjectGuid>
     <RootNamespace>Adaptor</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>7.Adaptor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
