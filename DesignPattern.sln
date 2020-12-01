@@ -24,7 +24,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.Adaptor", "07.Adaptor\Ad
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.Bridge", "08.Bridge\Bridge.vcxproj", "{E4CE666D-59CD-4547-BC1B-B68F060B1700}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.Composite", "09.Composite\Composite.vcxproj", "{2927ABBD-5CD0-4C91-9E8B-35B977BB1D41}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10.Decorator", "10.Decorator\10.Decorator.vcxproj", "{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09.Composite", "09.Composite\Composite.vcxproj", "{2927ABBD-5CD0-4C91-9E8B-35B977BB1D41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +100,14 @@ Global
 		{E4CE666D-59CD-4547-BC1B-B68F060B1700}.Release|x64.Build.0 = Release|x64
 		{E4CE666D-59CD-4547-BC1B-B68F060B1700}.Release|x86.ActiveCfg = Release|Win32
 		{E4CE666D-59CD-4547-BC1B-B68F060B1700}.Release|x86.Build.0 = Release|Win32
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Debug|x64.ActiveCfg = Debug|x64
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Debug|x64.Build.0 = Debug|x64
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Debug|x86.ActiveCfg = Debug|Win32
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Debug|x86.Build.0 = Debug|Win32
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Release|x64.ActiveCfg = Release|x64
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Release|x64.Build.0 = Release|x64
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Release|x86.ActiveCfg = Release|Win32
+		{2628ECC7-D27A-426F-B0F9-925C9A9C6BEB}.Release|x86.Build.0 = Release|Win32
 		{2927ABBD-5CD0-4C91-9E8B-35B977BB1D41}.Debug|x64.ActiveCfg = Debug|x64
 		{2927ABBD-5CD0-4C91-9E8B-35B977BB1D41}.Debug|x64.Build.0 = Debug|x64
 		{2927ABBD-5CD0-4C91-9E8B-35B977BB1D41}.Debug|x86.ActiveCfg = Debug|Win32
