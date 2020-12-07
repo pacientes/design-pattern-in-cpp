@@ -1,11 +1,11 @@
 #include <iostream>
 
+#include "Facade.h"
+
 int main()
 {
-	unsigned long long a, b;
-	std::cin >> a >> b;
-
-	std::cout << a + b;
+	std::shared_ptr<Facade> facade = std::make_shared<Facade>();
+	facade->processAll();
 
 	return 0;
 }
