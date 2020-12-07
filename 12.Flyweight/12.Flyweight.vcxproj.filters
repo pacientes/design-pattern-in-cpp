@@ -15,31 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IFactory.h">
+    <ClInclude Include="Flyweight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KoreaFactory.h">
+    <ClInclude Include="Morse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StateFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KoreaTire.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StateTire.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KoreaDoor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StateDoor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IDoorProduct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ITireProduct.h">
+    <ClInclude Include="Factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
