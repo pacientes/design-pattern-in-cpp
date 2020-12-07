@@ -1,18 +1,18 @@
-#pragma once
+﻿#pragma once
 
 #include "Component.h"
 
 // ConcreteComponent
 class ConcreteComponent1 :
-	public Component
+    public Component
 {
 public:
-	std::string product()
-	{
-		return "T-Shirts";
-	}
-	int price()
-	{
-		return 20000;
-	}
+    std::string product()
+    {
+        return "T-Shirts";
+    }
+    int price()
+    {
+        return 20000;
+    }
 };

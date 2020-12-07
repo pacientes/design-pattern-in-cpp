@@ -4,5 +4,5 @@
 class IProduct
 {
 public:
-	virtual void name() = 0;
+    virtual void name() = 0;
 };

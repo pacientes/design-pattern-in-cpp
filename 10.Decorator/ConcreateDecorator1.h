@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <memory>
 
@@ -6,22 +6,22 @@
 
 // ConcreateDecorate
 class ConcreateDecorator1 :
-	public Decorator
+    public Decorator
 {
 public:
-	ConcreateDecorator1(std::shared_ptr<Component> component) :
-		Decorator(component)
-	{
+    ConcreateDecorator1(std::shared_ptr<Component> component) :
+        Decorator(component)
+    {
 
-	}
+    }
 
-	std::string product()
-	{
-		return Decorator::product() + ", " + "i7";
-	}
+    std::string product()
+    {
+        return Decorator::product() + ", " + "i7";
+    }
 
-	int price()
-	{
-		return Decorator::price() + 46000;
-	}
+    int price()
+    {
+        return Decorator::price() + 46000;
+    }
 };

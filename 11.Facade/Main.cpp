@@ -1,11 +1,11 @@
-#include <iostream>
+﻿#include <iostream>
 
 #include "Facade.h"
 
 int main()
 {
-	std::shared_ptr<Facade> facade = std::make_shared<Facade>();
-	facade->processAll();
+    std::shared_ptr<Facade> facade = std::make_shared<Facade>();
+    facade->processAll();
 
-	return 0;
+    return 0;
 }

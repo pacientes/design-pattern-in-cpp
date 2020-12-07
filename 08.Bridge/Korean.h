@@ -1,15 +1,15 @@
-#pragma once
+﻿#pragma once
 
 #include <iostream>
 
 #include "Hello.h"
 
 class Korean :
-	public Hello
+    public Hello
 {
 public:
-	std::string greeting() override
-	{
-		return "Hello Korean";
-	}
+    std::string greeting() override
+    {
+        return "Hello Korean";
+    }
 };

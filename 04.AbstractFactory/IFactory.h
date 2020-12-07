@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "IDoorProduct.h"
 #include "ITireProduct.h"
@@ -8,6 +8,6 @@
 class IFactory
 {
 public:
-	virtual std::shared_ptr<ITireProduct> createTire() = 0;
-	virtual std::shared_ptr<IDoorProduct> createDoor() = 0;
+    virtual std::shared_ptr<ITireProduct> createTire() = 0;
+    virtual std::shared_ptr<IDoorProduct> createDoor() = 0;
 };

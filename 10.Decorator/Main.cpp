@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 #include "Component.h"
 #include "ConcreteComponent1.h"
@@ -10,15 +10,15 @@
 
 int main(const int argc, const char* argv[])
 {
-	
-	std::shared_ptr<Component> p = std::make_shared<ConcreateDecorator2>(
-		std::make_shared<ConcreateDecorator1>(
-		std::make_shared<Decorator>(
-		std::make_shared<ConcreteComponent1>()))
-		);
 
-	std::cout << p->product() << std::endl;
-	std::cout << p->price() << std::endl;
+    std::shared_ptr<Component> p = std::make_shared<ConcreateDecorator2>(
+        std::make_shared<ConcreateDecorator1>(
+        std::make_shared<Decorator>(
+        std::make_shared<ConcreteComponent1>()))
+        );
 
-	return 0;
+    std::cout << p->product() << std::endl;
+    std::cout << p->price() << std::endl;
+
+    return 0;
 }

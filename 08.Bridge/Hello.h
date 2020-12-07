@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <iostream>
 #include <string>
@@ -7,5 +7,5 @@
 class Hello
 {
 public:
-	virtual std::string greeting() = 0;
+    virtual std::string greeting() = 0;
 };

@@ -6,12 +6,11 @@
 
 // 실제 생성할 객체 클래스
 class AppleProduct final :
-	public IProduct
+    public IProduct
 {
 public:
-	void name() override
-	{
-		std::cout << "Apple Macbook laptop" << std::endl;
-	}
+    void name() override
+    {
+        std::cout << "Apple Macbook laptop" << std::endl;
+    }
 };
-

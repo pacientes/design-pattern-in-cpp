@@ -1,7 +1,7 @@
-#pragma once
+﻿#pragma once
 
 class ITireProduct
 {
 public:
-	virtual void makeAssemble() = 0;
+    virtual void makeAssemble() = 0;
 };

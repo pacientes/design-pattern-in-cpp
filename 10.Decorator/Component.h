@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
 
@@ -6,6 +6,6 @@
 class Component
 {
 public:
-	virtual std::string product() = 0;
-	virtual int price() = 0;
+    virtual std::string product() = 0;
+    virtual int price() = 0;
 };

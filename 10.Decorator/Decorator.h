@@ -1,30 +1,30 @@
-#pragma once
+﻿#pragma once
 
 #include <memory>
 
 #include "Component.h"
 
 // Decorator
-class Decorator : 
-	public Component
+class Decorator :
+    public Component
 {
 public:
-	Decorator(std::shared_ptr<Component> component) :
-		m_component(component)
-	{
+    Decorator(std::shared_ptr<Component> component) :
+        m_component(component)
+    {
 
-	}
+    }
 
-	std::string product()
-	{
-		return m_component->product();
-	}
+    std::string product()
+    {
+        return m_component->product();
+    }
 
-	int price()
-	{
-		return m_component->price();
-	}
+    int price()
+    {
+        return m_component->price();
+    }
 
 private:
-	std::shared_ptr<Component> m_component;
+    std::shared_ptr<Component> m_component;
 };
