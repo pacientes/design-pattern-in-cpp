@@ -22,7 +22,7 @@
 15. 명령 패턴(Command)
 16. 방문자 패턴(Visitor)
 17. 체인 패턴(Chain of responsibility)
-18. **감시자 패턴(Observer)**
+18. **관찰자 패턴(Observer)**
 19. 중재자 패턴(Mediator)
 20. **상태 패턴(State)**
 21. 메멘토 패턴(Memento)
