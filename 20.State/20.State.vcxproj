@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Context.h" />
+    <ClInclude Include="LightState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateFinish.h" />
     <ClInclude Include="StateOrder.h" />
