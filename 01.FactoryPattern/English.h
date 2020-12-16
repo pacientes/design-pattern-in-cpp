@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-class English final :
+class English :
     public ILanguage
 {
     void text() override

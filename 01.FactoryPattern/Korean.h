@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-class Korean final :
+class Korean :
     public ILanguage
 {
     void text() override
