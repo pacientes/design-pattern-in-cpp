@@ -23,16 +23,10 @@
     <ClInclude Include="Factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ILanguage.h">
+    <ClInclude Include="IDrink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Korean.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="English.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HelloLanguage.h">
+    <ClInclude Include="VendingMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

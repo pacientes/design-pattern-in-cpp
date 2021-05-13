@@ -22,11 +22,9 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="English.h" />
     <ClInclude Include="Factory.h" />
-    <ClInclude Include="HelloLanguage.h" />
-    <ClInclude Include="ILanguage.h" />
-    <ClInclude Include="Korean.h" />
+    <ClInclude Include="IDrink.h" />
+    <ClInclude Include="VendingMachine.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

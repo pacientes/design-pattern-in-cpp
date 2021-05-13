@@ -1,16 +1,13 @@
-#include "HelloLanguage.h"
 #include "Factory.h"
-#include "English.h"
-#include "Korean.h"
+#include "VendingMachine.h"
 
 int main(const int argc, const char* argv[])
 {
-    std::shared_ptr<Hello> hello = std::make_shared<Hello>();
-    hello->greeting(LanguageType::Korean);
-    hello->greeting(LanguageType::English);
+    VendingMachine machine;
+    machine.getDrink(DrinkType::Water);
 
-    std::shared_ptr<SimpleHello> simpleHello;
-    simpleHello->greeting();
+    machine.getDrink(DrinkType::Cola);
+    machine.getDrink(DrinkType::Juice);
 
     return 0;
 }

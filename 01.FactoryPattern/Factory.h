@@ -1,44 +1,29 @@
 #pragma once
 
-#include "ILanguage.h"
-
-#include "Korean.h"
-#include "English.h"
-
 #include <memory>
 #include <iostream>
+
+#include "IDrink.h"
 
 class Factory
 {
 public:
-    static std::shared_ptr<ILanguage> getInstance(const LanguageType& type)
+    static std::shared_ptr<IDrink> getInstance(const DrinkType& type)
     {
-        if (type == LanguageType::Korean)
+        if (type == DrinkType::Water)
         {
-            std::cout << "Factory: make Korean object..." << std::endl;
-            return std::make_shared<Korean>();
-            std::cout << std::endl;
+            std::cout << "Factory: Get Water Drink" << std::endl;
+            return std::make_shared<Water>();
         }
-        else if (type == LanguageType::English)
+        else if (type == DrinkType::Cola)
         {
-            std::cout << "Factory: make English object..." << std::endl;
-            return std::make_shared<English>();
-            std::cout << std::endl;
+            std::cout << "Factory: Get Cola Drink" << std::endl;
+            return std::make_shared<Cola>();
         }
-    }
-};
-
-class SimpleHello final
-{
-public:
-    void greeting()
-    {
-        std::shared_ptr<ILanguage> language = factory();
-        language->text();
-    }
-
-    static std::shared_ptr<ILanguage> factory()
-    {
-        return std::make_shared<Korean>();
+        else if (type == DrinkType::Juice)
+        {
+            std::cout << "Factory: Get Juice Drink" << std::endl;
+            return std::make_shared<Juice>();
+        }
     }
 };
