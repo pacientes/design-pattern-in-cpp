@@ -1,4 +1,3 @@
-#include "Factory.h"
 #include "VendingMachine.h"
 
 int main(const int argc, const char* argv[])

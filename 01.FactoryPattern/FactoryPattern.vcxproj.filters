@@ -29,5 +29,8 @@
     <ClInclude Include="VendingMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SimpleVendingMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

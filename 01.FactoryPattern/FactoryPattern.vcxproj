@@ -24,6 +24,7 @@
   <ItemGroup>
     <ClInclude Include="Factory.h" />
     <ClInclude Include="IDrink.h" />
+    <ClInclude Include="SimpleVendingMachine.h" />
     <ClInclude Include="VendingMachine.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
