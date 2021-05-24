@@ -8,7 +8,7 @@
 class Factory
 {
 public:
-    static std::shared_ptr<IDrink> getInstance(const DrinkType& type)
+    static std::shared_ptr<IDrink> getDrink(const DrinkType& type)
     {
         if (type == DrinkType::Water)
         {
