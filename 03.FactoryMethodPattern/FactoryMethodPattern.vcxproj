@@ -140,12 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AppleFactory.h" />
-    <ClInclude Include="AppleProduct.h" />
+    <ClInclude Include="Cola.h" />
+    <ClInclude Include="ColaFactory.h" />
+    <ClInclude Include="IDrink.h" />
     <ClInclude Include="IFactory.h" />
-    <ClInclude Include="IProduct.h" />
-    <ClInclude Include="LGFactory.h" />
-    <ClInclude Include="LGProduct.h" />
+    <ClInclude Include="Juice.h" />
+    <ClInclude Include="JuiceFactory.h" />
+    <ClInclude Include="Water.h" />
+    <ClInclude Include="WaterFactory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

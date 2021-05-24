@@ -15,22 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IProduct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LGProduct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AppleProduct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LGFactory.h">
+    <ClInclude Include="IDrink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AppleFactory.h">
+    <ClInclude Include="Cola.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Water.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Juice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColaFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JuiceFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
