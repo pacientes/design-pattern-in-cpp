@@ -25,9 +25,9 @@
     <ClInclude Include="KoreaDoor.h" />
     <ClInclude Include="KoreaFactory.h" />
     <ClInclude Include="KoreaTire.h" />
-    <ClInclude Include="StateDoor.h" />
-    <ClInclude Include="StateFactory.h" />
-    <ClInclude Include="StateTire.h" />
+    <ClInclude Include="USADoor.h" />
+    <ClInclude Include="USAFactory.h" />
+    <ClInclude Include="USATire.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

@@ -1,15 +1,15 @@
-﻿#pragma once
+#pragma once
 
 #include "IDoorProduct.h"
 
 #include <iostream>
 
-class StateDoorProduct final :
+class USADoorProduct final :
     public IDoorProduct
 {
 public:
     void makeAssemble() override
     {
-        std::cout << "State Door is assembled" << std::endl;
+        std::cout << "USA Door is assembled" << std::endl;
     }
 };

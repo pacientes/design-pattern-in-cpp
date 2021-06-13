@@ -25,5 +25,4 @@ public:
         std::cout << "Korea Door is constructed" << std::endl;
         return std::make_shared<KoreaDoorProduct>();
     }
-
 };

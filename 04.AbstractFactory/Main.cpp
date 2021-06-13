@@ -1,5 +1,5 @@
 #include "KoreaFactory.h"
-#include "StateFactory.h"
+#include "USAFactory.h"
 
 int main(const int argc, const char* argv[])
 {
@@ -14,7 +14,7 @@ int main(const int argc, const char* argv[])
     std::cout << "\n\n" << std::endl;
 
     // USA Factory
-    factory.reset(new StateFactory);
+    factory.reset(new USAFactory);
     std::shared_ptr<IDoorProduct> uDoor = factory->createDoor();
     uDoor->makeAssemble();
 
