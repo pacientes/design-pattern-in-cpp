@@ -71,8 +71,6 @@ private:
         return infoComputer;
     }
 
-    std::string m_info;
-
     std::string m_cpu;
     std::vector<Memory> m_ram;
     std::vector<Storage> m_storage;
