@@ -13,6 +13,4 @@ int main(const int argc, const char* argv[])
     std::cout << "english message: " << english->getMessage() << std::endl;
 
     return 0;
-
-    Hello* pKorea = new Hello("");
 }
