@@ -1,34 +1,32 @@
 #pragma once
 
 #include "IBuilder.h"
-#include "Algorithm.h"
 
 class Builder final :
     public IBuilder
 {
 public:
-    Builder(std::shared_ptr<Algorithm> algorithm) : IBuilder(algorithm)
+    Builder() : IBuilder()
     {
-        // 실제 구현 클래스에서 부모 클래스의 생성자를 호출한다.
     }
 
-    Computer build() override
+    std::string getCPU() override
     {
-        std::cout << "[Builder] Build..." << std::endl;
-        m_algorithm->showAlgorithm(); // algorithm 클래스의 메소드 호출
-
-        m_algorithm->setCpu("i7"); // algorithm 클래스의 메소드 호출
-
-        std::vector<Memory> memory;
-        memory.push_back(Memory(8));
-        memory.push_back(Memory(8));
-        m_algorithm->setRam(memory); // algorithm 클래스의 메소드 호출
-
-        std::vector<Storage> storage;
-        storage.push_back(Storage(256));
-        storage.push_back(Storage(512));
-        m_algorithm->setStorage(storage); // algorithm 클래스의 메소드 호출
-
-        return m_algorithm->getInstance();
+        return std::string("i7 7700K");
     }
+
+    std::shared_ptr<Memory> getMemory() override
+    {
+        std::shared_ptr<Memory> memory = std::make_shared<Memory>(16);
+        return memory;
+    }
+
+    std::shared_ptr<Storage> getStorage() override
+    {
+        std::shared_ptr<Storage> storage = std::make_shared<Storage>(1024);
+        return storage;
+    }
+
+private:
+    std::shared_ptr<Computer> m_computer;
 };

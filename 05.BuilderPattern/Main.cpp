@@ -1,17 +1,13 @@
-#include "Algorithm.h"
-#include "AlgorithmVector.h"
-#include "IBuilder.h"
 #include "Builder.h"
 #include "Computer.h"
+#include "Director.h"
 
 int main(const int argc, const char* argv[])
 {
-    // 빌더 패턴은 복합 객체를 생성하는 패턴이다.
-    std::shared_ptr<Algorithm> algorithm = std::make_shared<AlgorithmVector>();
-    std::shared_ptr<IBuilder> factory = std::make_shared<Builder>(algorithm);
+    std::shared_ptr<Director> director = std::make_shared<Director>(std::make_shared<Builder>());
+    std::shared_ptr<Computer> computer = director->construct();
 
-    Computer computer = factory->build();
-    computer.showInfo();
+    computer->showInfo();
 
     return 0;
 }

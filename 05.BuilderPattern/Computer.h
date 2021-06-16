@@ -16,19 +16,19 @@ public:
         m_storage.clear();
     }
 
-    void setMemory(const Memory& memory)
+    void setMemory(std::shared_ptr<Memory> memory)
     {
-        Memory tmpMemory = memory;
+        std::shared_ptr<Memory> tmpMemory = memory;
         m_ram.push_back(tmpMemory);
     }
 
-    void setStorage(const Storage& storage)
+    void setStorage(std::shared_ptr<Storage> storage)
     {
-        Storage tmpStorage = storage;
+        std::shared_ptr<Storage> tmpStorage = storage;
         m_storage.push_back(tmpStorage);
     }
 
-    void setCpu(const std::string& cpu)
+    void setCpu(const std::string cpu)
     {
         m_cpu = cpu;
     }
@@ -44,7 +44,7 @@ private:
         int size = 0;
         for (size_t i = 0; i < m_ram.size(); i++)
         {
-            size += m_ram[i].getSize();
+            size += m_ram[i]->getSize();
         }
 
         return size;
@@ -55,7 +55,7 @@ private:
         int size = 0;
         for (size_t i = 0; i < m_storage.size(); i++)
         {
-            size += m_ram[i].getSize();
+            size += m_storage[i]->getSize();
         }
 
         return size;
@@ -72,6 +72,6 @@ private:
     }
 
     std::string m_cpu;
-    std::vector<Memory> m_ram;
-    std::vector<Storage> m_storage;
+    std::vector<std::shared_ptr<Memory>> m_ram;
+    std::vector<std::shared_ptr<Storage>> m_storage;
 };
