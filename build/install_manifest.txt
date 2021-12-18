@@ -1,0 +1,1 @@
+/root/Files/DesignPattern/bin/23.Interpreter

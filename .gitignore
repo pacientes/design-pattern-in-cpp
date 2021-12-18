@@ -1,4 +1,7 @@
-# Directories...
-.vs/
-Debug/
-Release/
+# Directory
+CMakeFiles/
+
+# Files
+*.cmake
+CMakeCache.txt
+Makefile

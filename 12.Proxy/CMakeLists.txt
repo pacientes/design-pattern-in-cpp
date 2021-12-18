@@ -1,0 +1,28 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.15)
+SET(PATTERN_NAME 12.Proxy)
+
+PROJECT(${PATTERN_NAME})
+
+SET(CMAKE_CSS_STANDARD 17)
+SET(CMAKE_CSS_FLAGS "-Wall -Wextra")
+
+SET(SRC_FILES 
+    main.cpp
+    RealSubject.cpp
+    Proxy.cpp
+    ProxyFactory.cpp
+    RemoteProxy.cpp
+    VirtualProxy.cpp
+    ProtectionProxy.cpp
+    SmartProxy.cpp
+    )
+
+INCLUDE_DIRECTORIES(
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    )
+
+ADD_EXECUTABLE(${PATTERN_NAME} ${SRC_FILES})
+
+TARGET_COMPILE_OPTIONS(${PATTERN_NAME} PUBLIC -Wall -Werror)
+
+INSTALL(TARGETS ${PATTERN_NAME})
