@@ -1,5 +1,8 @@
 # Directory
 CMakeFiles/
+build-win/
+build-linux/
+bin/
 
 # Files
 *.cmake
