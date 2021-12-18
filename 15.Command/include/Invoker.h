@@ -3,6 +3,7 @@
 
 #include "Command.h"
 
+#include <string>
 #include <map>
 #include <memory>
 

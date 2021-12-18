@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-int main(const int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
     std::shared_ptr<Prototype> korea = std::make_shared<Hello>("Hello Korea");
     korea->setMessage("Hello Korea");

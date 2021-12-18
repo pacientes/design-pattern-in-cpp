@@ -2,7 +2,7 @@
 #include "ColaFactory.h"
 #include "JuiceFactory.h"
 
-int main(const int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
     std::shared_ptr<IFactory> factory = std::make_shared<WaterFactory>();
     std::shared_ptr<IDrink> water = factory->create();

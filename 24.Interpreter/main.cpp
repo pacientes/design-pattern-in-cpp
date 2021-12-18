@@ -5,7 +5,7 @@
 #include <iostream>
 #include <stack>
 
-int main(const int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
     std::shared_ptr<Context> context = std::make_shared<Context>("{{ 1 1 + }}");
     std::stack<std::string> stack;

@@ -1,6 +1,7 @@
 #include "RemoteProxy.h"
 
 #include <iostream>
+#include <string>
 
 RemoteProxy::RemoteProxy(std::shared_ptr<Subject> subject)
 {
@@ -19,13 +20,11 @@ std::string RemoteProxy::actionB()
     std::cout << "[RemoteProxy] actionB doing" << std::endl;
 
     // 결과에 대한 별도 처리 수행 가능
-    std::string msg = m_subject->actionB();
-    if (msg.empty())
+    std::string message = m_subject->actionB();
+    if (message.empty())
     {
         return "Nothing returned by RealSubject actionB()...";
     }
-    else
-    {
-        return msg;
-    }
+
+    return message;
 }

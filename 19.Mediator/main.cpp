@@ -3,7 +3,7 @@
 #include "ConcreteMediator.h"
 #include "ConcreteColleague.h"
 
-int main(const int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
     std::shared_ptr<ChatMediator> chat = std::make_shared<ChatMediator>();
 

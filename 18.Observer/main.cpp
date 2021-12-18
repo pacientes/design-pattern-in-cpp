@@ -1,7 +1,7 @@
 #include "ConcreteSubject.h"
 #include "ConcreteObserver.h"
 
-int main(const int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
     std::shared_ptr<ConcreteSubject> members = std::make_shared<ConcreteSubject>();
 

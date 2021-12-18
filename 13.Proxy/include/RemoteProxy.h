@@ -3,6 +3,7 @@
 
 #include "Subject.h"
 
+#include <string>
 #include <memory>
 
 class RemoteProxy : public Subject

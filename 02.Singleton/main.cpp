@@ -14,7 +14,7 @@ void secondStep()
     std::cout << Singleton::getInstance().getId() << std::endl;
 }
 
-int main(const int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
 
     std::cout << Singleton::getInstance().getId() << std::endl;
